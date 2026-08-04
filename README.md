@@ -24,3 +24,16 @@ The web application (`/app`) features 6 modern, dark cosmic-themed interactive s
 4. **🔭 Graph Visualizer (`app/results.html`)**: High-res interactive canvas visualization of minimum spanning tree galaxy filaments with zoom/pan and redshift filters.
 5. **📜 History & Reports (`app/history.html`)**: Log of past analysis runs with PDF report export, CSV filament downloads, and JSON graph exports.
 6. **⚙️ Settings (`app/settings.html`)**: Researcher profile management, SDSS/DESI API key configuration, and hardware acceleration options.
+
+## 🎨 Figma Design Frames (6 Screens)
+
+The repository includes high-fidelity UI design frames for all 6 core screens inside the [`figma_screens/`](./figma_screens/) folder:
+
+| Screen | Figma Frame Mockup Preview |
+| :--- | :--- |
+| **1. Dashboard Screen** | ![1. Dashboard Screen](./figma_screens/1_dashboard_screen.jpg) |
+| **2. Upload Dataset Screen** | ![2. Upload Dataset Screen](./figma_screens/2_upload_screen.jpg) |
+| **3. MST Engine Screen** | ![3. MST Engine Screen](./figma_screens/3_analysis_screen.jpg) |
+| **4. Graph Visualizer Screen** | ![4. Graph Visualizer Screen](./figma_screens/4_visualizer_screen.jpg) |
+| **5. History & Reports Screen** | ![5. History & Reports Screen](./figma_screens/5_history_screen.jpg) |
+| **6. Settings & API Screen** | ![6. Settings Screen](./figma_screens/6_settings_screen.jpg) |
