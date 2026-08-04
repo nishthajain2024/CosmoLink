@@ -137,4 +137,21 @@ The repository includes high-fidelity UI design frames for all 6 core screens in
 | **6. Settings & API Screen** | ![Settings](./figma/Settings.png) |
 
 
+## Necessary screenshots:
+
+Repository Structure
+<img width="959" height="566" alt="image" src="https://github.com/user-attachments/assets/4434a650-230d-4f6d-ab5b-ae20b7630e66" />
+
+GitHub Branches and flow
+
+<img width="430" height="498" alt="image" src="https://github.com/user-attachments/assets/aba18afa-a507-4b03-b29f-d6c67925a7d2" />
+
+<img width="417" height="311" alt="image" src="https://github.com/user-attachments/assets/ee28eca3-e461-42b8-8f33-96cfeece3015" />
+
+<img width="413" height="492" alt="image" src="https://github.com/user-attachments/assets/566c29dd-1b33-44af-a2c9-426ac1c66cc9" />
+
+<img width="411" height="245" alt="image" src="https://github.com/user-attachments/assets/188376df-b806-400e-8134-a2de34de8749" />
+
+
+
 
