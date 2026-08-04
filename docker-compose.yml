@@ -1,1 +1,13 @@
-
+version: '3.8'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cosmolink-web
+    ports:
+      - "8080:80"
+    volumes:
+      # Bind mount app folder for live reloading during local development
+      - ./app:/usr/share/nginx/html:ro
+    restart: unless-stopped
