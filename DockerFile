@@ -1,1 +1,13 @@
+# Use official lightweight Nginx image based on Alpine Linux
+FROM nginx:alpine
+# Set working directory inside container
+WORKDIR /usr/share/nginx/html
+# Remove default Nginx static assets
+RUN rm -rf ./*
+# Copy static frontend web application contents from host to container
+COPY ./app /usr/share/nginx/html
+# Expose port 80 to allow traffic to Nginx
+EXPOSE 80
+# Run Nginx in foreground to keep container running
+CMD ["nginx", "-g", "daemon off;"]
 
