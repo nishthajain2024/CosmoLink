@@ -27,13 +27,14 @@ The web application (`/app`) features 6 modern, dark cosmic-themed interactive s
 
 ## 🎨 Figma Design Frames (6 Screens)
 
-The repository includes high-fidelity UI design frames for all 6 core screens inside the [`figma_screens/`](./figma_screens/) folder:
+The repository includes high-fidelity UI design frames for all 6 core screens inside the [`figma/`](./figma/) folder:
 
 | Screen | Figma Frame Mockup Preview |
 | :--- | :--- |
-| **1. Dashboard Screen** | ![1. Dashboard Screen](./figma_screens/1_dashboard_screen.jpg) |
-| **2. Upload Dataset Screen** | ![2. Upload Dataset Screen](./figma_screens/2_upload_screen.jpg) |
-| **3. MST Engine Screen** | ![3. MST Engine Screen](./figma_screens/3_analysis_screen.jpg) |
-| **4. Graph Visualizer Screen** | ![4. Graph Visualizer Screen](./figma_screens/4_visualizer_screen.jpg) |
-| **5. History & Reports Screen** | ![5. History & Reports Screen](./figma_screens/5_history_screen.jpg) |
-| **6. Settings & API Screen** | ![6. Settings Screen](./figma_screens/6_settings_screen.jpg) |
+| **1. Dashboard Screen** | ![Dashboard](./figma/Dashboard.png) |
+| **2. Upload Dataset Screen** | ![Upload Dataset](./figma/Upload%20Dataset.png) |
+| **3. MST Engine Screen** | ![MST Engine](./figma/MST%20Engine.png) |
+| **4. Graph Visualizer Screen** | ![Graph Visualizer](./figma/Graph%20Visualizer.png) |
+| **5. History & Reports Screen** | ![History and Reports](./figma/History%20and%20Reports.png) |
+| **6. Settings & API Screen** | ![Settings](./figma/Settings.png) |
+
