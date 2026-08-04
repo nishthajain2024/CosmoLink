@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmic Filament Graph Visualizer - CosmoLink</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="brand">
+    <div class="brand-logo">🌌</div>
+    <h1>CosmoLink</h1>
+  </a>
+
+  <nav>
+    <a href="index.html">📊 Dashboard</a>
+    <a href="upload.html">📁 Upload Dataset</a>
+    <a href="analysis.html">⚡ MST Engine</a>
+    <a href="results.html" class="active">🔭 Graph Visualizer</a>
+    <a href="history.html">📜 History & Reports</a>
+    <a href="settings.html">⚙️ Settings</a>
+  </nav>
+
+  <div class="user-badge">
+    <div class="avatar">RA</div>
+    <span>Researcher Workspace</span>
+  </div>
+</header>
+
+<div class="container">
+  <div class="page-header">
+    <div>
+      <h2>Cosmic Structure Graph & Filament Visualizer</h2>
+      <p>High-resolution canvas representation of detected minimum spanning tree galaxy filaments and superclusters</p>
+    </div>
+    <div class="button-group" style="margin-top:0;">
+      <a href="history.html" class="btn-primary">📄 Export Analysis Report</a>
+    </div>
+  </div>
+
+  <div class="main-grid" style="grid-template-columns: 3fr 1fr;">
+    <div class="panel" style="padding:16px;">
+      <div class="panel-header" style="margin-bottom:12px;">
+        <h3 class="panel-title">🌌 Interactive 2D/3D MST Graph Canvas</h3>
+        <div style="display:flex; gap:8px;">
+          <button class="btn-icon">🔍 Zoom In (+)</button>
+          <button class="btn-icon">🔍 Zoom Out (-)</button>
+          <button class="btn-icon">🎯 Reset Focus</button>
+          <button class="btn-icon">📷 Screenshot Canvas</button>
+        </div>
+      </div>
+
+      <div class="canvas-wrapper" style="height: 520px;">
+        <canvas id="cosmoCanvas"></canvas>
+      </div>
+
+      <div style="display:flex; gap:16px; margin-top:16px; font-size:13px; color:var(--text-secondary);">
+        <label style="display:flex; align-items:center; gap:6px;">
+          <input type="checkbox" checked> Show MST Edges
+        </label>
+        <label style="display:flex; align-items:center; gap:6px;">
+          <input type="checkbox" checked> Highlight Filament Trunks
+        </label>
+        <label style="display:flex; align-items:center; gap:6px;">
+          <input type="checkbox" checked> Render Cluster Hulls
+        </label>
+        <label style="display:flex; align-items:center; gap:6px;">
+          <input type="checkbox"> Node Labels
+        </label>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-header">
+        <h3 class="panel-title">📊 Graph Metrics</h3>
+        <span class="badge badge-success">Analyzed</span>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:16px;">
+        <div style="background:rgba(15,23,42,0.6); padding:12px; border-radius:8px; border:1px solid var(--border-color);">
+          <div style="font-size:12px; color:var(--text-muted);">Total Galaxies (Nodes)</div>
+          <div style="font-size:22px; font-weight:700; color:var(--accent-cyan);">12,450</div>
+        </div>
+
+        <div style="background:rgba(15,23,42,0.6); padding:12px; border-radius:8px; border:1px solid var(--border-color);">
+          <div style="font-size:12px; color:var(--text-muted);">MST Branch Edges</div>
+          <div style="font-size:22px; font-weight:700; color:var(--accent-purple);">12,449</div>
+        </div>
+
+        <div style="background:rgba(15,23,42,0.6); padding:12px; border-radius:8px; border:1px solid var(--border-color);">
+          <div style="font-size:12px; color:var(--text-muted);">Filament Spines Found</div>
+          <div style="font-size:22px; font-weight:700; color:var(--accent-pink);">57</div>
+        </div>
+
+        <div style="background:rgba(15,23,42,0.6); padding:12px; border-radius:8px; border:1px solid var(--border-color);">
+          <div style="font-size:12px; color:var(--text-muted);">Mean Filament Length</div>
+          <div style="font-size:22px; font-weight:700; color:var(--accent-green);">18.4 Mpc/h</div>
+        </div>
+      </div>
+
+      <div style="margin-top:20px; padding-top:16px; border-top:1px solid var(--border-color);">
+        <h4 style="font-size:14px; font-weight:600; margin-bottom:12px;">🎛️ Interactive Filters</h4>
+        
+        <div class="form-group">
+          <label>Redshift Range ($z$): <strong>0.01 - 0.08</strong></label>
+          <input type="range" min="0.01" max="0.2" step="0.01" value="0.08" class="form-control">
+        </div>
+
+        <button class="btn-primary" style="width:100%; justify-content:center;">Apply Filter</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  CosmoLink Platform &copy; 2026 - Minimum Spanning Tree (MST) Galaxy Filament Structure Analysis Engine
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

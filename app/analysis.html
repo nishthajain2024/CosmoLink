@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MST Analysis Engine - CosmoLink</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="brand">
+    <div class="brand-logo">🌌</div>
+    <h1>CosmoLink</h1>
+  </a>
+
+  <nav>
+    <a href="index.html">📊 Dashboard</a>
+    <a href="upload.html">📁 Upload Dataset</a>
+    <a href="analysis.html" class="active">⚡ MST Engine</a>
+    <a href="results.html">🔭 Graph Visualizer</a>
+    <a href="history.html">📜 History & Reports</a>
+    <a href="settings.html">⚙️ Settings</a>
+  </nav>
+
+  <div class="user-badge">
+    <div class="avatar">RA</div>
+    <span>Researcher Workspace</span>
+  </div>
+</header>
+
+<div class="container">
+  <div class="page-header">
+    <div>
+      <h2>Mistree MST Engine Configuration</h2>
+      <p>Configure graph parameters, distance cutoffs, and run filament extraction algorithms</p>
+    </div>
+    <div class="button-group" style="margin-top:0;">
+      <a href="results.html" class="btn-primary">View Output Graph ➔</a>
+    </div>
+  </div>
+
+  <div class="main-grid">
+    <div class="panel">
+      <div class="panel-header">
+        <h3 class="panel-title">⚙️ Algorithm Parameter Tuning</h3>
+        <span class="badge badge-info">Preset: Standard Cosmic Web</span>
+      </div>
+
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px;">
+        <div class="form-group">
+          <label>Distance Metric</label>
+          <select class="form-control">
+            <option selected>Comoving 3D Distance (Mpc/h)</option>
+            <option>Angular Separation + Redshift Space</option>
+            <option>Projected 2D Sky Coordinates</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>MST Algorithm Engine</label>
+          <select class="form-control">
+            <option selected>Prim's Algorithm (Optimized C++)</option>
+            <option>Kruskal's Parallel Disjoint-Set</option>
+            <option>SciPy Minimum Spanning Tree</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Maximum Edge Cutoff Length ($d_{\text{cut}}$): <strong style="color:var(--accent-cyan);" id="dcutVal">12.5 Mpc/h</strong></label>
+        <input type="range" min="1" max="50" value="12" class="form-control" oninput="document.getElementById('dcutVal').innerText = this.value + '.5 Mpc/h'">
+      </div>
+
+      <div class="form-group">
+        <label>Minimum Nodes per Filament Trunk: <strong style="color:var(--accent-cyan);" id="nodesVal">5 Nodes</strong></label>
+        <input type="range" min="2" max="20" value="5" class="form-control" oninput="document.getElementById('nodesVal').innerText = this.value + ' Nodes'">
+      </div>
+
+      <div class="form-group">
+        <label>Filament Spine Smoothing Factor ($\sigma$): <strong style="color:var(--accent-cyan);" id="smoothVal">1.8</strong></label>
+        <input type="range" min="0" max="5" step="0.1" value="1.8" class="form-control" oninput="document.getElementById('smoothVal').innerText = this.value">
+      </div>
+
+      <div class="button-group">
+        <button class="btn-primary" style="flex:1; justify-content:center;">⚡ Execute MST Filament Extraction</button>
+        <button class="btn-secondary">↺ Reset Defaults</button>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-header">
+        <h3 class="panel-title">⏳ Pipeline Execution</h3>
+        <span class="badge badge-pending">Running (78%)</span>
+      </div>
+
+      <ul class="activity-list">
+        <li class="activity-item">
+          <div class="activity-icon" style="background:rgba(52,211,153,0.15); color:var(--accent-green);">✓</div>
+          <div class="activity-content">
+            <h4>1. Dataset Pre-processing</h4>
+            <p>Converted RA/DEC/z to 3D Cartesian coordinates</p>
+          </div>
+        </li>
+        <li class="activity-item">
+          <div class="activity-icon" style="background:rgba(52,211,153,0.15); color:var(--accent-green);">✓</div>
+          <div class="activity-content">
+            <h4>2. K-Nearest Neighbor Graph</h4>
+            <p>Built spatial kd-tree structure for 12,450 galaxies</p>
+          </div>
+        </li>
+        <li class="activity-item">
+          <div class="activity-icon" style="background:rgba(52,211,153,0.15); color:var(--accent-green);">✓</div>
+          <div class="activity-content">
+            <h4>3. Prim's MST Construction</h4>
+            <p>12,449 minimum spanning edges computed</p>
+          </div>
+        </li>
+        <li class="activity-item">
+          <div class="activity-icon" style="background:rgba(251,191,36,0.15); color:var(--accent-amber);">⌛</div>
+          <div class="activity-content">
+            <h4>4. Filament Spine Tracing</h4>
+            <p>Pruning minor branches & classifying trunks...</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-top:24px;">
+    <div class="panel-header">
+      <h3 class="panel-title">📡 Real-Time Live Graph Canvas Preview</h3>
+      <span class="badge badge-info">Interactive Nodes</span>
+    </div>
+
+    <div class="canvas-wrapper">
+      <canvas id="cosmoCanvas"></canvas>
+    </div>
+  </div>
+</div>
+
+<footer>
+  CosmoLink Platform &copy; 2026 - Minimum Spanning Tree (MST) Galaxy Filament Structure Analysis Engine
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

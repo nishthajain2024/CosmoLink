@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analysis History & Reports - CosmoLink</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="brand">
+    <div class="brand-logo">🌌</div>
+    <h1>CosmoLink</h1>
+  </a>
+
+  <nav>
+    <a href="index.html">📊 Dashboard</a>
+    <a href="upload.html">📁 Upload Dataset</a>
+    <a href="analysis.html">⚡ MST Engine</a>
+    <a href="results.html">🔭 Graph Visualizer</a>
+    <a href="history.html" class="active">📜 History & Reports</a>
+    <a href="settings.html">⚙️ Settings</a>
+  </nav>
+
+  <div class="user-badge">
+    <div class="avatar">RA</div>
+    <span>Researcher Workspace</span>
+  </div>
+</header>
+
+<div class="container">
+  <div class="page-header">
+    <div>
+      <h2>Analysis History & Exported Reports</h2>
+      <p>Manage past minimum spanning tree analysis runs, download PDF reports, and export graph JSON data</p>
+    </div>
+    <div class="button-group" style="margin-top:0;">
+      <button class="btn-primary">📥 Batch Download All Reports</button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-header">
+      <h3 class="panel-title">📜 Past Analysis Logs</h3>
+      <div style="display:flex; gap:12px;">
+        <input type="text" placeholder="Search dataset or job ID..." class="form-control" style="padding:6px 12px; width:220px;">
+        <select class="form-control" style="padding:6px 12px; width:140px;">
+          <option>All Statuses</option>
+          <option>Completed</option>
+          <option>Running</option>
+        </select>
+      </div>
+    </div>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Job ID</th>
+          <th>Dataset Name</th>
+          <th>Timestamp</th>
+          <th>Cutoff ($d_{\text{cut}}$)</th>
+          <th>Filaments</th>
+          <th>Status</th>
+          <th>Export Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#JOB-8821</td>
+          <td>sdss_dr16_sample_12k.csv</td>
+          <td>2026-08-05 00:45</td>
+          <td>12.5 Mpc/h</td>
+          <td>57</td>
+          <td><span class="badge badge-success">Completed</span></td>
+          <td>
+            <div style="display:flex; gap:6px;">
+              <button class="btn-icon">📄 PDF Report</button>
+              <button class="btn-icon">📊 CSV Data</button>
+              <button class="btn-icon">🌐 JSON Graph</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>#JOB-8820</td>
+          <td>desi_edr_bright_galaxies.fits</td>
+          <td>2026-08-04 18:22</td>
+          <td>15.0 Mpc/h</td>
+          <td>84</td>
+          <td><span class="badge badge-success">Completed</span></td>
+          <td>
+            <div style="display:flex; gap:6px;">
+              <button class="btn-icon">📄 PDF Report</button>
+              <button class="btn-icon">📊 CSV Data</button>
+              <button class="btn-icon">🌐 JSON Graph</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>#JOB-8819</td>
+          <td>coma_supercluster_survey.csv</td>
+          <td>2026-08-03 14:10</td>
+          <td>10.0 Mpc/h</td>
+          <td>32</td>
+          <td><span class="badge badge-success">Completed</span></td>
+          <td>
+            <div style="display:flex; gap:6px;">
+              <button class="btn-icon">📄 PDF Report</button>
+              <button class="btn-icon">📊 CSV Data</button>
+              <button class="btn-icon">🌐 JSON Graph</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>#JOB-8818</td>
+          <td>virgo_cluster_test_run.csv</td>
+          <td>2026-08-02 09:15</td>
+          <td>8.0 Mpc/h</td>
+          <td>18</td>
+          <td><span class="badge badge-success">Completed</span></td>
+          <td>
+            <div style="display:flex; gap:6px;">
+              <button class="btn-icon">📄 PDF Report</button>
+              <button class="btn-icon">📊 CSV Data</button>
+              <button class="btn-icon">🌐 JSON Graph</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>#JOB-8817</td>
+          <td>sdss_high_redshift_z2.csv</td>
+          <td>2026-08-01 11:40</td>
+          <td>20.0 Mpc/h</td>
+          <td>-</td>
+          <td><span class="badge badge-pending">Running</span></td>
+          <td>
+            <div style="display:flex; gap:6px;">
+              <button class="btn-icon" disabled style="opacity:0.5;">Processing...</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<footer>
+  CosmoLink Platform &copy; 2026 - Minimum Spanning Tree (MST) Galaxy Filament Structure Analysis Engine
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

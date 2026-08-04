@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings & API Config - CosmoLink</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="brand">
+    <div class="brand-logo">🌌</div>
+    <h1>CosmoLink</h1>
+  </a>
+
+  <nav>
+    <a href="index.html">📊 Dashboard</a>
+    <a href="upload.html">📁 Upload Dataset</a>
+    <a href="analysis.html">⚡ MST Engine</a>
+    <a href="results.html">🔭 Graph Visualizer</a>
+    <a href="history.html">📜 History & Reports</a>
+    <a href="settings.html" class="active">⚙️ Settings</a>
+  </nav>
+
+  <div class="user-badge">
+    <div class="avatar">RA</div>
+    <span>Researcher Workspace</span>
+  </div>
+</header>
+
+<div class="container">
+  <div class="page-header">
+    <div>
+      <h2>User Profile & System Preferences</h2>
+      <p>Configure API integrations for SDSS/DESI, Redis cache parameters, and user account settings</p>
+    </div>
+    <div class="button-group" style="margin-top:0;">
+      <button class="btn-primary">💾 Save All Preferences</button>
+    </div>
+  </div>
+
+  <div class="main-grid">
+    <div class="panel">
+      <div class="panel-header">
+        <h3 class="panel-title">👤 Account & Researcher Profile</h3>
+        <span class="badge badge-info">Active Session</span>
+      </div>
+
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+        <div class="form-group">
+          <label>Researcher Name</label>
+          <input type="text" value="Raaghav Agarwal" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Affiliation / University</label>
+          <input type="text" value="Astrophysics & Cosmology Lab" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>User Role / Persona</label>
+        <select class="form-control">
+          <option selected>Cosmology Researcher</option>
+          <option>Astrophysics Student</option>
+          <option>Educator / Professor</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Email Notification Digest</label>
+        <select class="form-control">
+          <option selected>Instant notification upon analysis completion</option>
+          <option>Daily summary report</option>
+          <option>Disabled</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-header">
+        <h3 class="panel-title">🔑 External API & Cache</h3>
+        <span class="badge badge-success">Connected</span>
+      </div>
+
+      <div class="form-group">
+        <label>SDSS SkyServer API Token</label>
+        <input type="password" value="sdss_skyserver_sec_891283719" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label>DESI Access Token</label>
+        <input type="password" value="desi_access_key_9918237192" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label>Redis Cache Host</label>
+        <input type="text" value="redis://localhost:6379/0" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label>Database URI (SQLite / PostgreSQL)</label>
+        <input type="text" value="sqlite:///./cosmolink.db" class="form-control">
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-top:24px;">
+    <div class="panel-header">
+      <h3 class="panel-title">🖥️ Hardware & Performance Acceleration</h3>
+      <span class="badge badge-success">GPU Accelerated</span>
+    </div>
+
+    <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:20px;">
+      <div style="background:rgba(15,23,42,0.6); padding:16px; border-radius:10px; border:1px solid var(--border-color);">
+        <h4 style="font-size:14px; font-weight:600; margin-bottom:6px;">WebGL 2.0 Acceleration</h4>
+        <p style="font-size:12px; color:var(--text-secondary); margin-bottom:12px;">Enable hardware-accelerated 3D canvas rendering for large MST graphs (&gt; 100,000 nodes)</p>
+        <span class="badge badge-success">Enabled</span>
+      </div>
+
+      <div style="background:rgba(15,23,42,0.6); padding:16px; border-radius:10px; border:1px solid var(--border-color);">
+        <h4 style="font-size:14px; font-weight:600; margin-bottom:6px;">Multi-Threading Engine</h4>
+        <p style="font-size:12px; color:var(--text-secondary); margin-bottom:12px;">Utilize C++ / WebAssembly parallel threads for Prim's MST distance calculations</p>
+        <span class="badge badge-success">8 Threads Active</span>
+      </div>
+
+      <div style="background:rgba(15,23,42,0.6); padding:16px; border-radius:10px; border:1px solid var(--border-color);">
+        <h4 style="font-size:14px; font-weight:600; margin-bottom:6px;">Redis Session Cache</h4>
+        <p style="font-size:12px; color:var(--text-secondary); margin-bottom:12px;">Cache parsed CSV/FITS dataframes to avoid re-parsing during parameter changes</p>
+        <span class="badge badge-info">Cache Active (14.2 MB)</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  CosmoLink Platform &copy; 2026 - Minimum Spanning Tree (MST) Galaxy Filament Structure Analysis Engine
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

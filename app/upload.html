@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Dataset - CosmoLink</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="brand">
+    <div class="brand-logo">🌌</div>
+    <h1>CosmoLink</h1>
+  </a>
+
+  <nav>
+    <a href="index.html">📊 Dashboard</a>
+    <a href="upload.html" class="active">📁 Upload Dataset</a>
+    <a href="analysis.html">⚡ MST Engine</a>
+    <a href="results.html">🔭 Graph Visualizer</a>
+    <a href="history.html">📜 History & Reports</a>
+    <a href="settings.html">⚙️ Settings</a>
+  </nav>
+
+  <div class="user-badge">
+    <div class="avatar">RA</div>
+    <span>Researcher Workspace</span>
+  </div>
+</header>
+
+<div class="container">
+  <div class="page-header">
+    <div>
+      <h2>Dataset Import & Validation Workspace</h2>
+      <p>Upload local CSV/FITS files or import catalog data from SDSS and DESI astronomical archives</p>
+    </div>
+    <div class="button-group" style="margin-top:0;">
+      <a href="analysis.html" class="btn-primary">Proceed to MST Analysis ➔</a>
+    </div>
+  </div>
+
+  <div class="main-grid">
+    <div class="panel">
+      <div class="panel-header">
+        <h3 class="panel-title">📤 Upload Local File</h3>
+        <span class="badge badge-info">Supported Formats: .csv, .fits, .tsv</span>
+      </div>
+
+      <div class="dropzone" id="dropzone">
+        <div class="dropzone-icon">☁️</div>
+        <h3 style="margin-bottom:8px; font-weight:600;">Drag & Drop Astronomical Catalog File</h3>
+        <p style="color:var(--text-secondary); font-size:13px; margin-bottom:16px;">or click to browse your computer (Max file size: 500MB)</p>
+        <button class="btn-secondary">Browse Files</button>
+      </div>
+
+      <div style="margin-top:24px; padding-top:20px; border-top:1px solid var(--border-color);">
+        <h4 style="font-size:15px; font-weight:600; margin-bottom:14px;">🌐 External Astronomical Archives Importer</h4>
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px;">
+          <button class="btn-secondary" style="justify-content:center;">🔭 SDSS DR16 Importer</button>
+          <button class="btn-secondary" style="justify-content:center;">🌌 DESI EDR Importer</button>
+          <button class="btn-secondary" style="justify-content:center;">⭐ Gaia DR3 Importer</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-header">
+        <h3 class="panel-title">📋 Column Validation</h3>
+        <span class="badge badge-success">Schema Match</span>
+      </div>
+
+      <div class="form-group">
+        <label>Right Ascension (RA) Column</label>
+        <select class="form-control">
+          <option selected>ra (degrees)</option>
+          <option>RA_deg</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Declination (DEC) Column</label>
+        <select class="form-control">
+          <option selected>dec (degrees)</option>
+          <option>DEC_deg</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Redshift (z) Column</label>
+        <select class="form-control">
+          <option selected>redshift (z)</option>
+          <option>z_spec</option>
+        </select>
+      </div>
+
+      <button class="btn-primary" style="width:100%; justify-content:center; margin-top:10px;">
+        ✔ Validate & Save Dataset
+      </button>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-top:24px;">
+    <div class="panel-header">
+      <h3 class="panel-title">🔍 Dataset Preview: sdss_galaxy_sample_12k.csv</h3>
+      <span class="badge badge-success">12,450 rows loaded</span>
+    </div>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Right Ascension (RA)</th>
+          <th>Declination (DEC)</th>
+          <th>Redshift ($z$)</th>
+          <th>r-band Mag</th>
+          <th>Classification</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#G-00192</td>
+          <td>184.2415°</td>
+          <td>+0.4128°</td>
+          <td>0.0482</td>
+          <td>16.84</td>
+          <td><span class="badge badge-info">Elliptical</span></td>
+        </tr>
+        <tr>
+          <td>#G-00193</td>
+          <td>184.2890°</td>
+          <td>+0.4310°</td>
+          <td>0.0491</td>
+          <td>17.12</td>
+          <td><span class="badge badge-info">Spiral</span></td>
+        </tr>
+        <tr>
+          <td>#G-00194</td>
+          <td>184.3102°</td>
+          <td>+0.3984°</td>
+          <td>0.0478</td>
+          <td>16.45</td>
+          <td><span class="badge badge-info">BCG Cluster Center</span></td>
+        </tr>
+        <tr>
+          <td>#G-00195</td>
+          <td>184.3541°</td>
+          <td>+0.4812°</td>
+          <td>0.0503</td>
+          <td>17.60</td>
+          <td><span class="badge badge-info">Spiral</span></td>
+        </tr>
+        <tr>
+          <td>#G-00196</td>
+          <td>184.4021°</td>
+          <td>+0.5109°</td>
+          <td>0.0489</td>
+          <td>16.92</td>
+          <td><span class="badge badge-info">Irregular</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<footer>
+  CosmoLink Platform &copy; 2026 - Minimum Spanning Tree (MST) Galaxy Filament Structure Analysis Engine
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
