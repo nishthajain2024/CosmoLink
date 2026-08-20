@@ -11,7 +11,7 @@ CosmoLink is a web application that helps astronomers visualize galaxy distribut
 Cosmological datasets contain billions of galaxy data points. Identifying continuous cosmic filaments and galaxy clusters manually or through non-graph-based algorithms is computationally expensive, prone to noise, and visually unintuitive. Astronomers require a fast, containerized web interface to compute MST graphs and extract structural parameters on demand.
 
 ### Target Users (Personas)
-1. **Dr. Elena Vance (Cosmology Researcher)**: Needs quick MST extraction over galaxy survey data (e.g., SDSS, DESI) to validate cosmic web models.
+1. **Dr. Elena Vance (Cosmolo gy Researcher)**: Needs quick MST extraction over galaxy survey data (e.g., SDSS, DESI) to validate cosmic web models.
 2. **Marcus Chen (Astrophysics Graduate Student)**: Requires an accessible, containerized web tool to experiment with MST parameters and visualize filament length distributions.
 
 ### Vision Statement
