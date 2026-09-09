@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="qBLCGsdL0bSYXN1j4k_q">
+    <mxGraphModel dx="2054" dy="2356" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="COSMO-LINK- HIGH LEVEL ARCHITECTURE DIAGRAM" vertex="1">
+          <mxGeometry height="30" width="340" x="445" y="-70" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-25" edge="1" parent="1" source="4Ks3p7XR77jAXqe7NGzO-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.467;exitY=1.021;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.465;entryY=0.011;entryDx=0;entryDy=0;entryPerimeter=0;" target="4Ks3p7XR77jAXqe7NGzO-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;PRESENTATION LAYER&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Cosmo Web Interface&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; padding: 0px;&quot;&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="340" x="445" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-27" edge="1" parent="1" source="4Ks3p7XR77jAXqe7NGzO-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4Ks3p7XR77jAXqe7NGzO-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="API LAYER&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="340" x="445" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-28" edge="1" parent="1" source="4Ks3p7XR77jAXqe7NGzO-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4Ks3p7XR77jAXqe7NGzO-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-29" edge="1" parent="1" source="4Ks3p7XR77jAXqe7NGzO-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4Ks3p7XR77jAXqe7NGzO-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="PROCESSING LAYER&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="340" x="445" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="DATA LAYER&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="340" x="785" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Dashboard" vertex="1">
+          <mxGeometry height="30" width="85" x="460" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Settings" vertex="1">
+          <mxGeometry height="30" width="85" x="685" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="History and Reports" vertex="1">
+          <mxGeometry height="30" width="85" x="572.5" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Graph Visualizer" vertex="1">
+          <mxGeometry height="30" width="85" x="460" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="MST Engine" vertex="1">
+          <mxGeometry height="30" width="85" x="685" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Upload Dataset" vertex="1">
+          <mxGeometry height="30" width="85" x="572.5" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="FastAPI Backend&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;API Endpoints&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Request Handling&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Input Validation&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="257.5" x="486.25" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="MST Engine&lt;div&gt;MiSTree&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;MST Generation&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Graph Analysis&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Statistics&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="136" width="280" x="475" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="Database/Cache&lt;div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Datasets&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Analysis History&lt;/li&gt;&lt;li&gt;MST Results&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="305" x="802.5" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="External Astronomy&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Data Sources&lt;/span&gt;&lt;div&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Galaxy Data&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Astronomical Catalogs&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="295" x="150" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-26" edge="1" parent="1" source="4Ks3p7XR77jAXqe7NGzO-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="602.5" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4Ks3p7XR77jAXqe7NGzO-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="USER" vertex="1">
+          <mxGeometry height="30" width="60" x="572.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
