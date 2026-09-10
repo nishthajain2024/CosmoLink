@@ -99,10 +99,14 @@ We strictly follow the **GitHub Flow** branching strategy for project developmen
    - Requires at least 1 peer review approval before merging.
 4. **Merge Strategy**:
    - Merge using **Squash and Merge** or standard Merge commit, then delete the feature branch.
-   -
-   - ## 🏗️ Software Design
+   
+## 🏗️ Software Design
 
-![CosmoLink Architecture Diagram](./architecture/CosmoLink_Architecture_Diagram.png)
+### High-Level Architecture
+
+CosmoLink follows a layered architecture that separates the Presentation, API, Processing, and Data responsibilities.
+
+![CosmoLink Architecture Diagram](docs/design/CosmoLink-Architecture.png)
 
 ### Key Architecture Components:
 - **Frontend**: HTML / CSS / JavaScript Web Application featuring dataset upload, interactive dashboards, and result visualization.
