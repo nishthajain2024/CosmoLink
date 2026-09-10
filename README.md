@@ -106,7 +106,7 @@ We strictly follow the **GitHub Flow** branching strategy for project developmen
 
 CosmoLink follows a layered architecture that separates the Presentation, API, Processing, and Data responsibilities.
 
-![CosmoLink Architecture Diagram](docs/design/CosmoLink-Architecture.png)
+![CosmoLink Architecture Diagram](docs/architecture/high-level-architecture-diagram.drawio.png)
 
 ### Key Architecture Components:
 - **Frontend**: HTML / CSS / JavaScript Web Application featuring dataset upload, interactive dashboards, and result visualization.
