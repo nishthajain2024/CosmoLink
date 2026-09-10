@@ -136,6 +136,17 @@ The repository includes updated high-fidelity UI design frames for all 6 core sc
 | **5. History & Reports Screen** | ![History and Reports](docs/design/figma-v2-updated/History%20and%20Reports-v2.jpg) |
 | **6. Settings Screen** | ![Settings](docs/design/figma-v2-updated/Settings-v2.jpg) |
 
+## 🧩 Design Choices
+
+The following key design choices were made to improve the maintainability, flexibility, and usability of CosmoLink.
+
+| Design Choice | Why |
+|---|---|
+| **Layered Architecture** | Separates system responsibilities and improves maintainability. |
+| **Modular Frontend** | Makes individual screens and shared resources easier to manage. |
+| **MST Encapsulation** | Hides algorithm complexity and reduces dependencies between components. |
+| **Task-Oriented UI** | Simplifies navigation and improves the overall user experience. |
+
 
 ## Necessary screenshots:
 
