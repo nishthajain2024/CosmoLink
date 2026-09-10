@@ -100,7 +100,7 @@ We strictly follow the **GitHub Flow** branching strategy for project developmen
 4. **Merge Strategy**:
    - Merge using **Squash and Merge** or standard Merge commit, then delete the feature branch.
    -
-   - ## 🏗️ System Architecture
+   - ## 🏗️ Software Design
 
 ![CosmoLink Architecture Diagram](./architecture/CosmoLink_Architecture_Diagram.png)
 
